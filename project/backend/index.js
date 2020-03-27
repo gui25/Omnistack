@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (request,response) => {
+app.post('/users', (request,response) => {
 
     return response.json({
         evento: 'semana OmniStak 11.0',
