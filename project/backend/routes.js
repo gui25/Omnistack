@@ -1,11 +1,14 @@
-app.post('/users/', (request,response) => {
+const express = require('exprees');
 
-    const body = request.body;
+const routes = express.Router();
 
-    console.log(body);
+routes.post('/ongs', (request,response) => {
+
+    const data = request.body;
+
+    console.log(data);
 
     return response.json({
-        evento: 'semana OmniStak 11.0',
-        aluno: 'Guilherme Bernardo'
+        
     });
 });
